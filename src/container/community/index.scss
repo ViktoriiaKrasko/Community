@@ -1,0 +1,80 @@
+.page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #121212;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  max-width: 400px;
+  width: 100%;
+}
+
+.button,
+.link {
+  transition: opacity 0.6s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #121212;
+  border-bottom: 1px solid #121212;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+
+  &--disabled {
+    color: #888888;
+    border-bottom: 1px solid #888888;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #121212;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__title {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  &__button {
+    color: #ffffff;
+    background-color: #f46f17;
+    border-radius: 12px;
+    padding: 16px 26px;
+  }
+}
